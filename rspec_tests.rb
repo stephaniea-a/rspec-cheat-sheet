@@ -39,7 +39,7 @@ describe "show the depths of rspec" do
       it 'should test the various class type matchers' do
         g = 5.0
         h = Hash.new
-        expect(g).to be_within(0.1).of(g) #check if g is a float
+        # expect(g).to be_within(0.1).of(g) #check if g is a float
         expect(g).to be_a(Float) #check if g is a float
         expect(g).to be_kind_of(Float) #check if g is a float
         expect(h).to be_a(Hash)
@@ -47,6 +47,22 @@ describe "show the depths of rspec" do
         # expect(h).to be_kind_of(Hash) #check if h is a hash
       end
     
+    # Comparisons
+ 	# expect(actual).to be >  expected
+	# expect(actual).to be >= expected
+	# expect(actual).to be <= expected
+	# expect(actual).to be <  expected
+	# expect(actual).to be_between(minimum, maximum).inclusive
+	# expect(actual).to be_between(minimum, maximum).exclusive
+	# expect(actual).to match(/expression/)
+	# expect(actual).to be_within(delta).of(expected)
+	# expect(actual).to start_with expected
+	# expect(actual).to end_with expected
+
+	# Types/classes/responses
+	# expect(actual).to be_instance_of(expected)
+	# expect(actual).to be_kind_of(expected)
+	# expect(actual).to respond_to(expected)
 
   end
 end

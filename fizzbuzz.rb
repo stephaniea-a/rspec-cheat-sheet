@@ -27,7 +27,7 @@ class Fizzbuzz
 
 	end
 
-	def fizzbuzz
+	def get_fizzbuzz_array
 		fizz_buzz_array = []
 
 		for num in 1..100
@@ -49,37 +49,44 @@ class Fizzbuzz
 end
 
 
-
-
 describe "Fizzbuzz" do
 
 	it 'should print out fizz for multiples of 3' do
-		expect(multiple_of_3(3)).to eq('fizz')
+		fizzbuzz = Fizzbuzz.new
+		expect(fizzbuzz.multiple_of_3(3)).to eq('fizz')
 	end
 
 	it 'should print out buzz for multiples of 5' do
-		expect(multiple_of_5(5)).to eq('buzz')
+		fizzbuzz = Fizzbuzz.new
+		expect(fizzbuzz.multiple_of_5(5)).to eq('buzz')
 	end
 
 	it 'should print out fizzbuzz for multiples of 15' do
-		expect(multiple_of_15(15)).to eq('fizzbuzz')
+		fizzbuzz = Fizzbuzz.new
+		expect(fizzbuzz.multiple_of_15(15)).to eq('fizzbuzz')
 	end
 
 	it 'should return fizz for index[2]' do
+		fizzbuzz = Fizzbuzz.new
 
-		fizz_buzz_array = fizzbuzz
+		fizz_buzz_array = fizzbuzz.get_fizzbuzz_array
 
 		expect(fizz_buzz_array[2]).to eq('fizz')
 	end
 
 	it 'should return buzz for index[4]' do
-		fizz_buzz_array = fizzbuzz
+		fizzbuzz = Fizzbuzz.new
+
+		fizz_buzz_array = fizzbuzz.get_fizzbuzz_array
 
 		expect(fizz_buzz_array[4]).to eq('buzz')
 	end
 
 	it 'should return fizzbuzz for index[14]' do
-		fizz_buzz_array = fizzbuzz
+		fizzbuzz = Fizzbuzz.new
+
+		fizz_buzz_array = fizzbuzz.get_fizzbuzz_array
+		
 
 		expect(fizz_buzz_array[14]).to eq('fizzbuzz')
 	end

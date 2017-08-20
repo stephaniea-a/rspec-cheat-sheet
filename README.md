@@ -14,4 +14,4 @@ This consists of printing out numbers 1 to 100. If a nnumber is divisible by 3 t
 This was created in a class which was instanstiated in order to be used in our rspec test. A before hook would be useful for future implementation.
 
 ## Calculator
-A basic calculator was created with methods to add two numbers. The total of these numbers were tested using our rspec tests.
+A basic calculator was created with methods to add, subtract, multiply and divide two numbers. The total of these numbers were tested using our rspec tests.
